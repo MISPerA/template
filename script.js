@@ -31,8 +31,7 @@ for (var i = 0; i < versiculosArray.length; i++) {
         templateHTML += '<a class="instagram-link" href="https://www.instagram.com/mis.pera/" target="_blank">';
         templateHTML += '<i class="fab fa-instagram" style="color: black;"></i>'; // Ícone do Instagram
         //templateHTML += '<div class="instagram" href="https://www.instagram.com/mis.pera/" target="_blank">@mis.pera
-        templateHTML += '<a href="https://www.instagram.com/mis.pera/" target="_blank" style="color: #01BAD2; text-decoration: none; margin-left: 5px;">@mis.pera</a>';
-        templateHTML += '</a>';
+        templateHTML += '<span class="instagram" href="https://www.instagram.com/mis.pera/" target="_blank">@mis.pera</span>';
         templateHTML += '</a>';
     }
 }
