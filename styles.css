@@ -76,11 +76,16 @@ button:hover {
 
 .instagram-link {
     margin-top: 10px;
-    display: flex;
+    display: inline-block; /* Tornar o ícone e o nome de usuário em linha */
     text-decoration: none; /* Remover sublinhado padrão de links */
     align-items: center;
     justify-content: flex-end;
     color: #01BAD2;
+}
+
+.instagram-link i {
+    font-size: 20px;
+    margin-right: 5px;
 }
 
 .instagram-link:hover .fab {
