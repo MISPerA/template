@@ -31,7 +31,7 @@ for (var i = 0; i < versiculosArray.length; i++) {
         templateHTML += '<p>';
         templateHTML += '<a class="instagram-link" href="https://www.instagram.com/mis.pera/" target="_blank">';
         templateHTML += '<i class="fab fa-instagram" style="color: #000000;"></i>'; // Ícone do Instagram
-        templateHTML += '<span class="instagram" href="https://www.instagram.com/mis.pera/" target="_blank">@mis.pera</span>';
+        templateHTML += '<span class="instagram" href="https://www.instagram.com/mis.pera/" target="_blank" margin-right: 5px;">@mis.pera</span>';
         templateHTML += '</a>';
         templateHTML += '</p>';
         templateHTML += '</div>';
