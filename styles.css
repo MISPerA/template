@@ -73,19 +73,15 @@ button:hover {
     color: #000000;
 }
 
-/* Configuração para impressão */
-@media print {
-    body {
-        width: 21cm;
-        height: 29.7cm;
-        margin: 1cm;
-    }
+.instagram-link {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #01BAD2;
+}
 
-    .container {
-        max-width: none;
-        width: 100%;
-        box-shadow: none;
-        padding: 0;
-        margin: 0;
-    }
+.instagram-link i {
+    font-size: 20px;
+    margin-right: 5px;
 }
