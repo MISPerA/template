@@ -47,9 +47,14 @@ function imprimir() {
     var janelaImpressao = window.open('', '_blank');
     janelaImpressao.document.write('<html><head><title>Imprimir</title>');
     janelaImpressao.document.write('<link rel="stylesheet" href="styles.css">');
-    janelaImpressao.document.write('</head><body>' + conteudo + '</body></html>');
+    janelaImpressao.document.write('</head><body>');
+
+    // Adiciona os templates ao corpo da página de impressão
+    janelaImpressao.document.write(conteudo);
+
+    janelaImpressao.document.write('</body></html>');
     janelaImpressao.document.close();
 
     // Agora, em vez de chamar print na nova janela, chama na janela atual
-    window.print();
+    janelaImpressao.print();
 }
