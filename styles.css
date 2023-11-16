@@ -74,6 +74,15 @@ button:hover {
     color: #000000;
 }
 
+.instagram {
+    color: #000000; /* Cor do texto do Instagram em branco */
+    text-decoration: none; /* Remover sublinhado padrão de links */
+}
+
+.instagram:hover {
+    text-decoration: underline; /* Adicionar sublinhado quando o mouse estiver sobre o link */
+}
+
 .instagram-link {
     color: #000000; /* Cor do texto do Instagram em branco */
     text-decoration: none; /* Remover sublinhado padrão de links */
