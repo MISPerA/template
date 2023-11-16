@@ -16,9 +16,18 @@ function gerarTemplates() {
     for (var i = 0; i < versiculosArray.length; i++) {
         var versiculo = versiculosArray[i].trim();
         if (versiculo !== '') {
+            // Divide o versículo em linhas
+            var linhas = versiculo.split('\n');
+
+            // O primeiro versículo é o título
+            var titulo = linhas[0].trim();
+
+            // O restante é o texto do versículo
+            var texto = linhas.slice(1).join('<br>');
+
             templateHTML += '<div class="verse-container">';
-            templateHTML += '<p class="verse-title">Versículo Bíblico:</p>';
-            templateHTML += '<p class="verse-text">' + versiculo + '</p>';
+            templateHTML += '<p class="verse-title">' + titulo + '</p>';
+            templateHTML += '<p class="verse-text">' + texto + '</p>';
             templateHTML += '</div>';
         }
     }
