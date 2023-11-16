@@ -87,18 +87,6 @@ button:hover {
     text-decoration: underline; /* Adicionar sublinhado quando o mouse estiver sobre o link */
 }
 
-.instagram-link .fab {
-    margin-top: 10px;
-    display: flex;
-    text-decoration: none; /* Remover sublinhado padrão de links */
-    align-items: center;
-    justify-content: flex-end;
-    color: #01BAD2;
-}
-
-.instagram-link:hover .fab {
-    text-decoration: underline; /* Adicionar sublinhado quando o mouse estiver sobre o link */
-}
 
 /* Configuração para impressão */
 @media print {
