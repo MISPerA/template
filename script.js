@@ -41,7 +41,9 @@ for (var i = 0; i < versiculosArray.length; i++) {
 }
 
 function imprimir() {
-        
+    var versiculos = document.getElementById('versiculos').value;
+    var outputDiv = document.getElementById('output');
+
     // Verifica se o campo dos versículos não está vazio
     if (versiculos.trim() === '') {
         alert('Por favor, insira pelo menos um versículo bíblico.');
