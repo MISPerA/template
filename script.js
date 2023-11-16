@@ -28,24 +28,13 @@ function gerarTemplates() {
             templateHTML += '<div class="verse-container">';
             templateHTML += '<p class="verse-title">' + titulo + '</p>';
             templateHTML += '<p class="verse-text">' + texto + '</p>';
+            templateHTML += '<div class="instagram-link">';
+            templateHTML += '<a href="https://www.instagram.com/mis.pera/" target="_blank">@mis.pera</a>';
+            templateHTML += '</div>';
             templateHTML += '</div>';
         }
     }
 
     // Adiciona os templates ao elemento de saída
     outputDiv.innerHTML = templateHTML;
-}
-
-function imprimir() {
-    var conteudo = document.getElementById('output').innerHTML;
-
-    // Cria uma nova janela para imprimir
-    var janelaImpressao = window.open('', '_blank');
-    janelaImpressao.document.write('<html><head><title>Imprimir</title>');
-    janelaImpressao.document.write('<link rel="stylesheet" href="styles.css">');
-    janelaImpressao.document.write('</head><body>' + conteudo + '</body></html>');
-    janelaImpressao.document.close();
-
-    // Agora, em vez de chamar print na nova janela, chama na janela atual
-    window.print();
 }
