@@ -79,7 +79,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: #007B8A; /* Cor do texto do Instagram em branco */
+    color: #01BAD2; /* Cor do texto do Instagram em azul */
     text-decoration: none; /* Remover sublinhado padrão de links */
 }
 
@@ -88,7 +88,10 @@ button:hover {
 }
 
 .instagram-link {
-    color: #000000; /* Cor do texto do Instagram em branco */
+    margin-top: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    color: #000000; /* Cor do texto do Instagram em preto */
     text-decoration: none; /* Remover sublinhado padrão de links */
     display: inline-block; /* Tornar o ícone e o nome de usuário em linha */
 }
