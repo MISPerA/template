@@ -17,3 +17,11 @@ function gerarTemplate() {
     // Adiciona o template ao elemento de saída
     outputDiv.innerHTML = templateHTML;
 }
+
+function imprimir() {
+    var conteudo = document.getElementById('output').innerHTML;
+    var janelaImpressao = window.open('', '_blank');
+    janelaImpressao.document.write('<html><head><title>Imprimir</title></head><body>' + conteudo + '</body></html>');
+    janelaImpressao.document.close();
+    janelaImpressao.print();
+}
