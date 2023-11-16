@@ -74,30 +74,17 @@ button:hover {
     color: #000000;
 }
 
-.instagram {
-    margin-right: 5px;
+.instagram-link {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: #01BAD2; /* Cor do texto do Instagram em azul */
-    text-decoration: none; /* Remover sublinhado padrão de links */
+    color: #01BAD2;
 }
 
-.instagram:hover {
-    text-decoration: underline; /* Adicionar sublinhado quando o mouse estiver sobre o link */
-}
-
-.instagram-link {
+.instagram-link i {
+    font-size: 20px;
     margin-right: 5px;
-    align-items: center;
-    justify-content: flex-end;
-    color: #000000; /* Cor do texto do Instagram em preto */
-    text-decoration: none; /* Remover sublinhado padrão de links */
-    display: inline-block; /* Tornar o ícone e o nome de usuário em linha */
-}
-
-.instagram-link:hover .fab {
-    text-decoration: underline; /* Adicionar sublinhado quando o mouse estiver sobre o link */
 }
 
 /* Configuração para impressão */
