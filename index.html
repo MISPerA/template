@@ -5,79 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Versículos Bíblicos</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: center;
-            margin: 20px;
-            background-color: #f5f5f5;
-        }
-        h1 {
-            color: #333;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 16px;
-            color: #555;
-        }
-        textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #4caf50;
-            color: white;
-            padding: 10px 20px;
-            margin-top: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        #output {
-            text-align: left;
-            margin-top: 20px;
-        }
-        .verse-container {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            background-color: #fff;
-            border-radius: 4px;
-        }
-        .verse-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        .verse-text {
-            font-size: 16px;
-            color: #555;
-        }
-
-        /* Configuração para impressão */
-        @media print {
-            body {
-                width: 21cm;
-                height: 29.7cm;
-                margin: 1cm;
-            }
-        }
+        /* Seus estilos aqui... */
     </style>
 </head>
 <body>
 
     <h1>Gerador de Versículos Bíblicos</h1>
 
-    <label for="versiculos">Insira os versículos (um por linha):</label>
+    <label for="versiculos">Insira os versículos (separe por duas linhas em branco):</label>
     <textarea id="versiculos" rows="4" cols="50"></textarea>
 
     <button onclick="gerarTemplates()">Gerar Templates</button>
