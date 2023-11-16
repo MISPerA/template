@@ -38,10 +38,14 @@ function gerarTemplates() {
 
 function imprimir() {
     var conteudo = document.getElementById('output').innerHTML;
+
+    // Cria uma nova janela para imprimir
     var janelaImpressao = window.open('', '_blank');
     janelaImpressao.document.write('<html><head><title>Imprimir</title>');
     janelaImpressao.document.write('<link rel="stylesheet" href="styles.css">');
     janelaImpressao.document.write('</head><body>' + conteudo + '</body></html>');
     janelaImpressao.document.close();
-    janelaImpressao.print();
+
+    // Agora, em vez de chamar print na nova janela, chama na janela atual
+    window.print();
 }
