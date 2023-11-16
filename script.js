@@ -33,6 +33,7 @@ for (var i = 0; i < versiculosArray.length; i++) {
         //templateHTML += '<div class="instagram" href="https://www.instagram.com/mis.pera/" target="_blank">@mis.pera
         templateHTML += '<span class="instagram" href="https://www.instagram.com/mis.pera/" target="_blank">@mis.pera</span>';
         templateHTML += '</a>';
+        templateHTML += '</div>';
     }
 }
 
