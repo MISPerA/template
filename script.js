@@ -13,28 +13,28 @@ function gerarTemplates() {
     var templateHTML = '';
 
     // Gera o HTML para cada versículo
-    for (var i = 0; i < versiculosArray.length; i++) {
-        var versiculo = versiculosArray[i].trim();
-        if (versiculo !== '') {
-            // Divide o versículo em linhas
-            var linhas = versiculo.split('\n');
+for (var i = 0; i < versiculosArray.length; i++) {
+    var versiculo = versiculosArray[i].trim();
+    if (versiculo !== '') {
+        // Divide o versículo em linhas
+        var linhas = versiculo.split('\n');
 
-            // O primeiro versículo é o título
-            var titulo = linhas[0].trim();
+        // O primeiro versículo é o título
+        var titulo = linhas[0].trim();
 
-            // O restante é o texto do versículo
-            var texto = linhas.slice(1).join('<br>');
+        // O restante é o texto do versículo
+        var texto = linhas.slice(1).join('<br>');
 
-            templateHTML += '<div class="verse-container">';
-            templateHTML += '<p class="verse-title">' + titulo + '</p>';
-            templateHTML += '<p class="verse-text">' + texto + '</p>';
-            templateHTML += '<div class="instagram-link">';
-            templateHTML += '<i class="fab fa-instagram" style="color: #01BAD2;"></i>'; // Ícone do Instagram
-            templateHTML += '<a href="https://www.instagram.com/mis.pera/" target="_blank" style="color: #01BAD2; text-decoration: none; margin-left: 5px;">@mis.pera</a>';
-            templateHTML += '</div>';
-            templateHTML += '</div>';
-        }
+        templateHTML += '<div class="verse-container">';
+        templateHTML += '<p class="verse-title">' + titulo + '</p>';
+        templateHTML += '<p class="verse-text">' + texto + '</p>';
+        templateHTML += '<div class="instagram-link">';
+        templateHTML += '<i class="fab fa-instagram" style="color: #01BAD2; margin-right: 5px;"></i>'; // Ícone do Instagram
+        templateHTML += '@mis.pera';
+        templateHTML += '</div>';
+        templateHTML += '</div>';
     }
+}
 
     // Adiciona os templates ao elemento de saída
     outputDiv.innerHTML = templateHTML;
