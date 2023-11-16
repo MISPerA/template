@@ -74,17 +74,8 @@ button:hover {
     color: #000000;
 }
 
-.instagram {
-    color: black; /* Cor do texto do Instagram em branco */
-    text-decoration: none; /* Remover sublinhado padrão de links */
-}
-
-.instagram:hover {
-    text-decoration: underline; /* Adicionar sublinhado quando o mouse estiver sobre o link */
-}
-
 .instagram-link {
-    color: clack; /* Cor do texto do Instagram em branco */
+    color: black; /* Cor do texto do Instagram em branco */
     text-decoration: none; /* Remover sublinhado padrão de links */
     display: inline-block; /* Tornar o ícone e o nome de usuário em linha */
 }
