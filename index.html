@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Versículos Bíblicos</title>
-    <style>
-        /* Seus estilos aqui... */
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Gerador de Versículos Bíblicos</h1>
+    <div class="container">
+        <h1>Gerador de Versículos Bíblicos</h1>
 
-    <label for="versiculos">Insira os versículos (separe por duas linhas em branco):</label>
-    <textarea id="versiculos" rows="4" cols="50"></textarea>
+        <label for="versiculos">Insira os versículos (separe por duas linhas em branco):</label>
+        <textarea id="versiculos" rows="4" cols="50"></textarea>
 
-    <button onclick="gerarTemplates()">Gerar Templates</button>
-    <button onclick="imprimir()">Imprimir</button>
+        <button onclick="gerarTemplates()">Gerar Templates</button>
+        <button onclick="imprimir()">Imprimir</button>
 
-    <div id="output"></div>
+        <div id="output"></div>
+    </div>
 
     <script src="script.js"></script>
 
