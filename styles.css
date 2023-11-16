@@ -83,11 +83,6 @@ button:hover {
     color: #01BAD2;
 }
 
-.instagram-link i {
-    font-size: 20px;
-    margin-top: 5px;
-}
-
 .instagram-link:hover .fab {
     text-decoration: underline; /* Adicionar sublinhado quando o mouse estiver sobre o link */
 }
