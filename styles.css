@@ -75,7 +75,11 @@ button:hover {
 }
 
 .instagram {
-    color: #000000; /* Cor do texto do Instagram em branco */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #007B8A; /* Cor do texto do Instagram em branco */
     text-decoration: none; /* Remover sublinhado padrão de links */
 }
 
