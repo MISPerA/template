@@ -54,6 +54,7 @@ button:hover {
 }
 
 .verse-container {
+    page-break-inside: avoid; /* Evita quebras de página dentro do container */
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
@@ -84,4 +85,21 @@ button:hover {
 .instagram-link i {
     font-size: 20px;
     margin-right: 5px;
+}
+
+/* Configuração para impressão */
+@media print {
+    body {
+        width: 21cm;
+        height: 29.7cm;
+        margin: 1cm;
+    }
+
+    .container {
+        max-width: none;
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
 }
