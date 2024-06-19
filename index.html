@@ -11,13 +11,10 @@
 
     <div class="container">
         <h1 class="print-hidden">Formatador Automático</h1>
-
-        <label for="versiculos">Somente a primeira linha será colocada em destaque. <br> Insira os versículos (separe-os por uma linha em branco):</label>
-        <textarea id="versiculos" rows="4" cols="50"></textarea>
-
-        <button onclick="gerarTemplates()">Gerar Templates</button>
-        <button onclick="imprimir()">Imprimir</button>
-
+        <label for="versiculos" class="print-hidden">Somente a primeira linha será colocada em destaque. <br> Insira os versículos (separe-os por uma linha em branco):</label>
+        <textarea id="versiculos" class="print-hidden" rows="4" cols="50"></textarea>
+        <button onclick="gerarTemplates()" class="print-hidden">Gerar Templates</button>
+        <button onclick="imprimir()" class="print-hidden">Imprimir</button>
         <div id="output"></div>
     </div>
 
