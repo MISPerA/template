@@ -1,11 +1,17 @@
+let isTemplateGenerated = false;
+
 function gerarTemplates() {
     var versiculos = document.getElementById('versiculos').value;
     var outputDiv = document.getElementById('output');
+    var messageDiv = document.getElementById('message');
 
     if (versiculos.trim() === '') {
-        alert('Por favor, insira pelo menos um versículo bíblico.');
+        showMessage('Por favor, insira pelo menos um versículo bíblico.');
         return;
     }
+
+    isTemplateGenerated = true;
+    messageDiv.style.display = 'none'; // Esconde qualquer mensagem existente
 
     var versiculosArray = versiculos.split('\n\n');
     var templateHTML = '';
@@ -58,17 +64,38 @@ function gerarTemplates() {
     observer.observe(outputDiv, { childList: true, subtree: true });
 }
 
+function showMessage(message) {
+    var messageDiv = document.getElementById('message');
+    messageDiv.textContent = message;
+    messageDiv.style.display = 'block';
+}
+
 function imprimir() {
     var outputDiv = document.getElementById('output');
+    var versiculos = document.getElementById('versiculos').value;
+
     if (outputDiv.innerHTML.trim() === '') {
-        alert('Por favor, gere os templates antes de imprimir.');
+        showMessage('Por favor, gere os templates antes de imprimir.');
         return;
     }
+
+    if (!isTemplateGenerated || versiculos.trim() === '') {
+        showMessage('Por favor, gere os templates antes de imprimir.');
+        return;
+    }
+
     document.querySelectorAll('.print-hidden').forEach(element => {
         element.classList.add('hidden-print');
     });
+
     window.print();
+
     document.querySelectorAll('.print-hidden').forEach(element => {
         element.classList.remove('hidden-print');
     });
 }
+
+document.getElementById('versiculos').addEventListener('input', function() {
+    isTemplateGenerated = false;
+    showMessage('O conteúdo foi alterado. Por favor, clique em "Gerar Templates" novamente para atualizar.');
+});
