@@ -102,4 +102,8 @@ button:hover {
         padding: 0;
         margin: 0;
     }
+
+    .print-hidden {
+        display: none;
+    }
 }
