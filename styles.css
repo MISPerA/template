@@ -53,6 +53,17 @@ button:hover {
     margin-top: 20px;
 }
 
+.message {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f44336; /* cor vermelha */
+    text-align: center;
+}
+
 .verse-container {
     page-break-inside: avoid; /* Evita quebras de página dentro do container */
     border: 1px solid #ddd;
