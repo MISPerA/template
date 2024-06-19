@@ -64,7 +64,11 @@ function imprimir() {
         alert('Por favor, gere os templates antes de imprimir.');
         return;
     }
-    document.querySelector('h1').classList.add('print-hidden');
+    document.querySelectorAll('.print-hidden').forEach(element => {
+        element.classList.add('hidden-print');
+    });
     window.print();
-    document.querySelector('h1').classList.remove('print-hidden');
+    document.querySelectorAll('.print-hidden').forEach(element => {
+        element.classList.remove('hidden-print');
+    });
 }
